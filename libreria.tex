@@ -1,0 +1,251 @@
+\documentclass[leter]{amsart}
+\usepackage[pdftex]{geometry}
+\usepackage[utf8]{inputenc}
+
+\usepackage{listings}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{courier}
+\usepackage{fancyhdr}
+
+\lstset{language=C++}
+\lstset{columns=fullflexible}
+\lstset{basicstyle=\scriptsize\ttfamily}
+\lstset{showspaces=false}
+
+\geometry{landscape}
+\setlength{\topmargin}{-0.25in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\columnsep}{1in}
+\setlength{\columnseprule}{0.2pt}
+\textwidth 9.5in
+
+\pagestyle{fancy}
+\lhead{Universidad de La Habana - UH}
+\chead{}
+\rhead{\thepage}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+
+\newcommand{\includecpp}[3]{
+  \begin{multicols}{2}
+    [\subsection{#1}\ ]
+    \lstinputlisting[language=c++]{#2/#3}
+  \end{multicols}
+}
+
+\newcommand{\stirlingfirst}[2]{\genfrac{[}{]}{0pt}{}{#1}{#2}}
+\newcommand{\stirlingsecond}[2]{\genfrac{\{}{\}}{0pt}{}{#1}{#2}}
+\newcommand{\norm}[1]{\lVert#1\rVert}
+
+\begin{document}
+  \begin{center}
+  	\Huge\textsc{ACM ICPC Team Reference - Contents}
+  	
+  	\vspace{0.35cm}
+  	
+  	\huge Universidad de La Habana - UH
+  	
+  	\huge Iv\'an Galb\'an Smith
+  	
+  	\vspace{0.35cm}
+  	
+  \end{center}
+  
+  \begin{multicols}{1}
+  	\tableofcontents
+  \end{multicols}
+
+\pagebreak
+
+  \section{General}
+	  \includecpp{Template}{./General}{Template.cpp}
+	  \includecpp{istringstream}{./General}{istringstream.cpp}
+	  \includecpp{printf scanf}{./General}{printf_scanf.cpp}
+	   
+\pagebreak
+	  
+  \section{BitMask}
+	   \includecpp{Amount of Hamiltonian Walks}{./BitMask}{amount_of_hamiltonian_walks.cpp}
+   
+	   \includecpp{Existence of Hamiltonian Cycle}{./BitMask}{existence_of_hamiltonian_cycle.cpp}
+   
+	   \includecpp{Existence of Hamiltonian Walk}{./BitMask}{existence_of_hamiltonian_walk.cpp}
+   
+	   \includecpp{Finding the Number of Simple Paths}{./BitMask}{finding_the_number_of_simple_paths.cpp}
+   
+	   \includecpp{Finding the Shortest Hamiltonian Cycle}{./BitMask}{finding_the_shortest_hamiltonian_cycle.cpp}
+   
+	   \includecpp{Number of Hamiltonian Cycles}{./BitMask}{number_of_hamiltonian_cycles.cpp}
+   
+	   \includecpp{Number of Simple Cycles}{./BitMask}{number_of_simple_cycles.cpp}
+   
+	   \includecpp{Shortest Hamiltonian Walk}{./BitMask}{shortest_hamiltonian_walk.cpp}
+   
+	   \includecpp{Subset Subset ($3^n$)}{./BitMask}{Subset_Subset.cpp}
+	
+\pagebreak
+	
+	\section{Data Structures}
+		
+		\includecpp{AVL Tree}{./Data_Structures}{AVL_Tree.cpp}
+		
+		\includecpp{Big Integer}{./Data_Structures}{Big_Integer.cpp}
+		
+		\includecpp{Binary Heap}{./Data_Structures}{Binary_Heap.cpp}
+		
+		\includecpp{Binomial Heap}{./Data_Structures}{Binomial_Heap.cpp}
+		
+		\includecpp{Disjoint Set}{./Data_Structures}{Disjoint_Set.cpp}
+		
+		\includecpp{Fenwick Tree Lazy}{./Data_Structures}{Fenwick_Tree_Lazy.cpp}
+		
+		\includecpp{Fenwick Tree 1D}{./Data_Structures}{Fenwick_Tree-1D.cpp}
+		
+		\includecpp{Fenwick Tree 2D}{./Data_Structures}{Fenwick_Tree-2D.cpp}
+		
+		\includecpp{Fraction}{./Data_Structures}{Fraction.cpp}
+		
+		\includecpp{Kd-Tree}{./Data_Structures}{Kd-Tree.cpp}
+		
+		\includecpp{Longest Common Ancestor dp}{./Data_Structures}{LCA_dp.cpp}
+		
+		\includecpp{Longest Common Ancestor rmq}{./Data_Structures}{LCA_rmq.cpp}
+		
+		\includecpp{Longest Common Ancestor sqrt}{./Data_Structures}{LCA_sqrt.cpp}
+		
+		\includecpp{Longest Common Ancestor Tarjan}{./Data_Structures}{LCA_Tarjan.cpp}
+		
+		\includecpp{Polynomial}{./Data_Structures}{Polynomial.cpp}
+		
+		\includecpp{Red-Black-Tree}{./Data_Structures}{Red-Black-Tree.cpp}
+		
+		\includecpp{Range Minimum Query SQRT}{./Data_Structures}{RMQ_SQRT.cpp}
+		
+		\includecpp{Range Minimum Query I}{./Data_Structures}{RMQ-I.cpp}
+		
+		\includecpp{Range Minimum Query II}{./Data_Structures}{RMQ-II.cpp}
+		
+		\includecpp{Range Minimum Sum Segment Query}{./Data_Structures}{RMSQ.cpp}
+		
+		\includecpp{Segment Tree Lazy Propagation}{./Data_Structures}{Segment_Tree_Lazy_Propagation.cpp}
+		
+		\includecpp{Segment Tree-1D Query}{./Data_Structures}{Segment_Tree-1D.cpp}
+		
+		\includecpp{Segment Tree-2D}{./Data_Structures}{RMSQ.cpp}
+		
+		\includecpp{Splay Tree}{./Data_Structures}{Splay_Tree.cpp}
+		
+		\includecpp{Treap}{./Data_Structures}{Treap.cpp}
+		
+		\includecpp{Treap Implicit Key}{./Data_Structures}{Treap_Implicit_Key.cpp}
+		
+		\includecpp{Trie}{./Data_Structures}{Trie.cpp}
+		
+		
+\pagebreak
+		
+  \section{Grafos}
+	    \includecpp{Articulation Point And Bridge}{./Graphs}{Articulation_Point_And_Bridge.cpp}
+    
+	    \includecpp{Bellman-Ford}{./Graphs}{Bellman-Ford.cpp}
+    
+	    \includecpp{Biconnected Components}{./Graphs}{Biconnected_Components.cpp}
+	
+		\includecpp{Dijkstra}{./Graphs}{Dijkstra.cpp}
+	
+		\includecpp{Floyd Warshall}{./Graphs}{Floyd-Warshall.cpp}
+	
+		\includecpp{Kruskal}{./Graphs}{Kruskal.cpp}
+	
+		\includecpp{Prim}{./Graphs}{Prim.cpp}
+	
+		\includecpp{Strongly Connected Components}{./Graphs}{SCC.cpp}
+	
+\pagebreak
+  
+  \section{String}
+	    \includecpp{Knuth-Morris-Pratt}{./String}{KMP.cpp}
+    
+	    \includecpp{Longest Common Subsequence}{./String}{LCS.cpp}
+    
+	    \includecpp{Longest Palindrome Substring}{./String}{Longest_Palindrome_Substring.cpp}
+    
+	    \includecpp{Manacher}{./String}{Manacher.cpp}
+    
+	    \includecpp{Z Function}{./String}{z_function.cpp}
+    
+\pagebreak
+
+  \section{Geometry}
+  
+    \includecpp{Basic Operation}{./Geometry}{Basic_Operation.cpp}
+    
+    \includecpp{Circles}{./Geometry}{Circles.cpp}
+    
+    \includecpp{Lines}{./Geometry}{Lines.cpp}
+    
+    \includecpp{Polygons}{./Geometry}{Polygons.cpp}
+    
+    \includecpp{Polygon Triangulation}{./Geometry}{Polygon_Triangulation.cpp}
+    
+    \includecpp{Rotating Calipers}{./Geometry}{Rotating_Calipers.cpp}
+    
+    \includecpp{Segments}{./Geometry}{Segments.cpp}
+    
+    \includecpp{Triangles}{./Geometry}{Triangles.cpp}
+   
+\pagebreak
+
+  \section{Matrix}
+  
+	  \includecpp{Gauss}{./Matrix}{Gauss.cpp}
+  
+	  \includecpp{Gauss Modulo 2}{./Matrix}{Gauss_Modulo_2.cpp}
+  
+	  \includecpp{Matrix Template}{./Matrix}{Matrix_Template.cpp}
+
+	\pagebreak
+
+  \section{Number Theory}
+    
+    \includecpp{Binomial Coefficient}{./Number_Theory}{Binomial_Coefficient.cpp}
+    
+    \includecpp{Divisibility}{./Number_Theory}{Divisibility.cpp}
+    
+    \includecpp{ALL Number Theory}{./Number_Theory}{Number_Theory.cpp}
+    \includecpp{Prime}{./Number_Theory}{Prime.cpp}
+    \includecpp{Tree Stern-Brocot}{./Number_Theory}{Tree_Stern-Brocot.cpp}
+    
+	\pagebreak
+    
+    \section{Numeric Methods}
+    
+    \includecpp{Fast Fourier Transform}{./Numeric}{fft.cpp}
+    
+    \includecpp{Romberg}{./Numeric}{Romberg.cpp}
+	  
+    \includecpp{Simpson}{./Numeric}{Simpson.cpp}
+    
+	 \pagebreak
+    
+    \section{Sorting-Searching}
+    
+	    \includecpp{Ternary Searh}{./Sorting-Searching}{Ternary_Searh.cpp}
+    
+	\pagebreak
+   
+  
+  \section{Mathematical facts}
+  \begin{multicols}{2}
+    \input{math_facts}
+  \end{multicols}  
+
+  \enlargethispage*{\baselineskip}
+  \pagebreak
+
+
+\end{document}
