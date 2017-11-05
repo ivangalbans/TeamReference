@@ -1,14 +1,3 @@
-//============================================================================
-// Name        : LIS.cpp
-// Author      : Iván Galbán Smith
-// Time:	   : O(n*log n)
-//============================================================================
-
-#include <bits/stdc++.h>
-using namespace std;
-
-
-
 const int oo = 99999999;
 
 #define index_of(as, x)\
@@ -37,9 +26,4 @@ vector<int> lis_fast(const vector<int> &a)
 		  b[m--] = a[i];
 
   return b;
-}
-
-int main() {
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
-	return 0;
 }
