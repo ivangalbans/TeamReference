@@ -48,7 +48,11 @@
   	\vspace{0.35cm}
   	
   	\huge Universidad de La Habana - UH
-  	
+
+	\huge Raydel Enrique Alonso Baryolo
+	  	
+  	\huge Paula Fonte S\'anchez
+
   	\huge Iv\'an Galb\'an Smith
   	
   	\vspace{0.35cm}
@@ -61,10 +65,22 @@
 
 \pagebreak
 
-  \section{General}
-	  \includecpp{Template}{./General}{Template.cpp}
-	  \includecpp{istringstream}{./General}{istringstream.cpp}
-	  \includecpp{printf scanf}{./General}{printf_scanf.cpp}
+  \section{Misc}
+		\includecpp{Template}{./misc}{Template.cpp}
+
+	  	\includecpp{istringstream}{./misc}{istringstream.cpp}
+
+	  	\includecpp{printf scanf}{./misc}{printf_scanf.cpp}
+	  	
+	  	\includecpp{Cube}{./misc}{cube.cpp}
+	  	
+	  	\includecpp{Josephus}{./misc}{josephus.cpp}
+	  	
+	  	\includecpp{Partition}{./misc}{partition.cpp}
+	  	
+	  	\includecpp{Random}{./misc}{random.cpp}
+	  	
+	  	\includecpp{Useful}{./misc}{useful.cpp}
 	   
 \pagebreak
 	  
@@ -97,11 +113,11 @@
 		
 		\includecpp{Binary Heap}{./Data_Structures}{Binary_Heap.cpp}
 		
-		\includecpp{Binomial Heap}{./Data_Structures}{Binomial_Heap.cpp}
+		%\includecpp{Binomial Heap}{./Data_Structures}{Binomial_Heap.cpp}
 		
 		\includecpp{Disjoint Set}{./Data_Structures}{Disjoint_Set.cpp}
 		
-		\includecpp{Fenwick Tree Lazy}{./Data_Structures}{Fenwick_Tree_Lazy.cpp}
+		%\includecpp{Fenwick Tree Lazy}{./Data_Structures}{Fenwick_Tree_Lazy.cpp}
 		
 		\includecpp{Fenwick Tree 1D}{./Data_Structures}{Fenwick_Tree-1D.cpp}
 		
@@ -111,23 +127,23 @@
 		
 		\includecpp{Kd-Tree}{./Data_Structures}{Kd-Tree.cpp}
 		
-		\includecpp{Longest Common Ancestor dp}{./Data_Structures}{LCA_dp.cpp}
+		\includecpp{Longest Common Ancestor. Sparse Table}{./Data_Structures}{LCA_sparse_table.cpp}
 		
-		\includecpp{Longest Common Ancestor rmq}{./Data_Structures}{LCA_rmq.cpp}
+		%\includecpp{Longest Common Ancestor rmq}{./Data_Structures}{LCA_rmq.cpp}
 		
-		\includecpp{Longest Common Ancestor sqrt}{./Data_Structures}{LCA_sqrt.cpp}
+		%\includecpp{Longest Common Ancestor sqrt}{./Data_Structures}{LCA_sqrt.cpp}
 		
-		\includecpp{Longest Common Ancestor Tarjan}{./Data_Structures}{LCA_Tarjan.cpp}
+		%\includecpp{Longest Common Ancestor Tarjan}{./Data_Structures}{LCA_Tarjan.cpp}
 		
 		\includecpp{Polynomial}{./Data_Structures}{Polynomial.cpp}
 		
-		\includecpp{Red-Black-Tree}{./Data_Structures}{Red-Black-Tree.cpp}
+		%\includecpp{Red-Black-Tree}{./Data_Structures}{Red-Black-Tree.cpp}
 		
-		\includecpp{Range Minimum Query SQRT}{./Data_Structures}{RMQ_SQRT.cpp}
+		%\includecpp{Range Minimum Query SQRT}{./Data_Structures}{RMQ_SQRT.cpp}
 		
-		\includecpp{Range Minimum Query I}{./Data_Structures}{RMQ-I.cpp}
+		\includecpp{Range Minimum Query Fast}{./Data_Structures}{RMQ-I.cpp}
 		
-		\includecpp{Range Minimum Query II}{./Data_Structures}{RMQ-II.cpp}
+		\includecpp{Range Minimum Query}{./Data_Structures}{RMQ-II.cpp}
 		
 		\includecpp{Range Minimum Sum Segment Query}{./Data_Structures}{RMSQ.cpp}
 		
@@ -137,7 +153,7 @@
 		
 		\includecpp{Segment Tree-2D}{./Data_Structures}{RMSQ.cpp}
 		
-		\includecpp{Splay Tree}{./Data_Structures}{Splay_Tree.cpp}
+		%\includecpp{Splay Tree}{./Data_Structures}{Splay_Tree.cpp}
 		
 		\includecpp{Treap}{./Data_Structures}{Treap.cpp}
 		
@@ -148,57 +164,100 @@
 		
 \pagebreak
 		
-  \section{Grafos}
-	    \includecpp{Articulation Point And Bridge}{./Graphs}{Articulation_Point_And_Bridge.cpp}
-    
-	    \includecpp{Bellman-Ford}{./Graphs}{Bellman-Ford.cpp}
-    
-	    \includecpp{Biconnected Components}{./Graphs}{Biconnected_Components.cpp}
-	
-		\includecpp{Dijkstra}{./Graphs}{Dijkstra.cpp}
-	
-		\includecpp{Floyd Warshall}{./Graphs}{Floyd-Warshall.cpp}
-	
-		\includecpp{Kruskal}{./Graphs}{Kruskal.cpp}
-	
-		\includecpp{Prim}{./Graphs}{Prim.cpp}
-	
-		\includecpp{Strongly Connected Components}{./Graphs}{SCC.cpp}
-	
-\pagebreak
-  
-  \section{String}
-	    \includecpp{Knuth-Morris-Pratt}{./String}{KMP.cpp}
-    
-	    \includecpp{Longest Common Subsequence}{./String}{LCS.cpp}
-    
-	    \includecpp{Longest Palindrome Substring}{./String}{Longest_Palindrome_Substring.cpp}
-    
-	    \includecpp{Manacher}{./String}{Manacher.cpp}
-    
-	    \includecpp{Z Function}{./String}{z_function.cpp}
-    
-\pagebreak
+	\section{Dynamic Programming}
+		\includecpp{Convex Hull Trick}{./DP}{convex_hull_trick.cpp}
+    	
+    	\includecpp{Longest Increasing Subsequence}{./DP}{LIS.cpp}
 
-  \section{Geometry}
+    	\includecpp{Matrix Chain}{./DP}{matrix_chain.cpp}
+
+		
+\pagebreak		
+		
+\section{Geometry}
   
     \includecpp{Basic Operation}{./Geometry}{Basic_Operation.cpp}
     
     \includecpp{Circles}{./Geometry}{Circles.cpp}
     
+    \includecpp{Closest Pair Points}{./Geometry}{closest_pair_points.cpp}
+    
+	\includecpp{Convex Cut}{./Geometry}{convex_cut.cpp}    
+    
+	\includecpp{Convex Hull 3D}{./Geometry}{convex_hull3d.cpp}    
+    
     \includecpp{Lines}{./Geometry}{Lines.cpp}
     
-    \includecpp{Polygons}{./Geometry}{Polygons.cpp}
+    \includecpp{Minkowski}{./Geometry}{minkowski.cpp}
+    
+    \includecpp{Point 3D}{./Geometry}{point3d.cpp}
     
     \includecpp{Polygon Triangulation}{./Geometry}{Polygon_Triangulation.cpp}
     
+	\includecpp{Rectilinear MST}{./Geometry}{rectilinear_mst.cpp}    
+    
     \includecpp{Rotating Calipers}{./Geometry}{Rotating_Calipers.cpp}
+    
+	\includecpp{Segment Intersect}{./Geometry}{segment_intersect.cpp}    
     
     \includecpp{Segments}{./Geometry}{Segments.cpp}
     
+	\includecpp{Semiplane Intersection}{./Geometry}{semiplane_intersection.cpp}        
+    
     \includecpp{Triangles}{./Geometry}{Triangles.cpp}
    
+\pagebreak		
+				
+		
+  \section{Graphs}
+	    \includecpp{Articulation Point And Bridge}{./Graphs}{Articulation_Point_And_Bridge.cpp}
+    
+	    \includecpp{Bellman-Ford}{./Graphs}{Bellman-Ford.cpp}
+    
+	    \includecpp{Biconnected Components}{./Graphs}{Biconnected_Components.cpp}
+
+		\includecpp{Bipartite Matching}{./Graphs}{bipartite_matching.cpp}	
+
+		\includecpp{Centroid Decomposition}{./Graphs}{centroid_decomposition.cpp}		
+	
+		\includecpp{Dijkstra}{./Graphs}{Dijkstra.cpp}
+	
+		\includecpp{Dominator Tree}{./Graphs}{dominator_tree.cpp}
+		
+		\includecpp{Flow with Lower Bound}{./Graphs}{flow_with_lower_bound.cpp}	
+	
+		\includecpp{Floyd Warshall}{./Graphs}{Floyd-Warshall.cpp}
+		
+		\includecpp{Gabow Edmonds}{./Graphs}{gabow_edmonds.cpp}
+		
+		\includecpp{Gomory hu Tree}{./Graphs}{gomory_hu_tree.cpp}
+		
+		\includecpp{Hopcroft Karp}{./Graphs}{hopcroft_karp.cpp}
+		
+		\includecpp{Hungarian}{./Graphs}{hungarian.cpp}		
+	
+		\includecpp{Kruskal}{./Graphs}{Kruskal.cpp}
+		
+		\includecpp{Max Flow Dinic}{./Graphs}{max_flow_dinic.cpp}
+		
+		\includecpp{Max Flow push relabel}{./Graphs}{max_flow_push_relabel.cpp}
+		
+		\includecpp{Min Cost Max Flow}{./Graphs}{min_cost_max_flow.cpp}
+		
+		\includecpp{Prim}{./Graphs}{Prim.cpp}
+		
+		\includecpp{Satisfiability Two SAT}{./Graphs}{satisfiability_twosat.cpp}
+	
+		\includecpp{Strongly Connected Components}{./Graphs}{SCC.cpp}
+		
+		\includecpp{SCC Gabow}{./Graphs}{scc_gabow.cpp}
+		
+		\includecpp{Stoer Wagner}{./Graphs}{stoer_wagner.cpp}
+		
+		\includecpp{Tree Isomorphism}{./Graphs}{tree_isomorphism.cpp}
+	
 \pagebreak
+  
 
   \section{Matrix}
   
@@ -217,7 +276,9 @@
     \includecpp{Divisibility}{./Number_Theory}{Divisibility.cpp}
     
     \includecpp{ALL Number Theory}{./Number_Theory}{Number_Theory.cpp}
+    
     \includecpp{Prime}{./Number_Theory}{Prime.cpp}
+
     \includecpp{Tree Stern-Brocot}{./Number_Theory}{Tree_Stern-Brocot.cpp}
     
 	\pagebreak
@@ -226,18 +287,61 @@
     
     \includecpp{Fast Fourier Transform}{./Numeric}{fft.cpp}
     
+    \includecpp{Goldsection Search}{./Numeric}{goldsection_search.cpp}
+    
+    \includecpp{Linear Recursion}{./Numeric}{linear_recursion.cpp}
+    
     \includecpp{Romberg}{./Numeric}{Romberg.cpp}
+    
+    \includecpp{Roots Newton}{./Numeric}{roots_newton.cpp}
+	  
+	 \includecpp{Simplex}{./Numeric}{simplex.cpp} 
 	  
     \includecpp{Simpson}{./Numeric}{Simpson.cpp}
     
 	 \pagebreak
+
+	\section{Parsing}
+    
+	    \includecpp{Shunting Yard}{./Parsing}{shunting_yard.cpp}
+    
+	\pagebreak
+
     
     \section{Sorting-Searching}
     
 	    \includecpp{Ternary Searh}{./Sorting-Searching}{Ternary_Searh.cpp}
     
 	\pagebreak
-   
+
+
+  \section{String}
+  
+		\includecpp{Aho Corasick}{./String}{aho_corasick.cpp}
+  
+	    \includecpp{Knuth-Morris-Pratt}{./String}{KMP.cpp}
+    
+	    \includecpp{Longest Common Subsequence}{./String}{LCS.cpp}
+    
+	    \includecpp{Longest Palindrome Substring}{./String}{Longest_Palindrome_Substring.cpp}
+    
+	    \includecpp{Manacher}{./String}{Manacher.cpp}
+	    
+	    \includecpp{Maximal Suffix}{./String}{maximal_suffix.cpp}
+	    
+	    \includecpp{Minimum Rotation}{./String}{minimum_rotation.cpp}
+	    
+	    \includecpp{Palindromic Tree}{./String}{palindromic_tree.cpp}
+	    
+	    \includecpp{Substring Palindrome}{./String}{substring_palindrome.cs}
+	    
+	    \includecpp{Suffix Array}{./String}{suffix_array.cpp}
+	    
+	    \includecpp{Suffix Automaton}{./String}{suffix_automaton.cpp}
+    
+	    \includecpp{Z Function}{./String}{z_function.cpp}
+    
+\pagebreak   
   
   \section{Mathematical facts}
   \begin{multicols}{2}

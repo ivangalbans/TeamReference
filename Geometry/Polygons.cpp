@@ -144,3 +144,46 @@ pair<Int, Int> pick_theorem(polygon &P)
 
 	return make_pair(I, B);
 }
+
+/*
+ * Determina si un poligono es convexo O(n)
+ */
+bool is_convex(const polygon &pol)
+{
+	int n = pol.size(), pos = 0, neg = 0;
+	for(int i = 0; i < n; ++i)
+	{
+		int j = PREV(i), k = NEXT(i);
+		point ik = point(pol[k].x() - pol[i].x(), pol[k].y() - pol[i].y());
+		point ij = point(pol[j].x() - pol[i].x(), pol[j].y() - pol[i].y());
+
+		if(cross(ik, ij) < 0) neg++;
+		else pos++;
+	}
+	return pos == 0 || neg == 0;
+}
+
+
+/*
+	Determine the position of a point relative
+	to a polygon.
+
+	Tested: AIZU(judge.u-aizu.ac.jp) CGL.3C
+	Complexity: O(n)
+*/
+
+enum { OUT, ON, IN };
+int contains(const polygon &P, const point &p)
+{
+	bool in = false;
+	for (int i = 0, n = P.size(); i < n; ++i)
+	{
+		point a = P[i] - p, b = P[NEXT(i)] - p;
+		if (imag(a) > imag(b)) swap(a, b);
+		if (imag(a) <= 0 && 0 < imag(b))
+			if (cross(a, b) < 0) in = !in;
+		if (cross(a, b) == 0 && dot(a, b) <= 0)
+			return ON;
+	}
+	return in ? IN : OUT;
+}

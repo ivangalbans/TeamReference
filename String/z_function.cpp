@@ -15,3 +15,25 @@ vector<int> z_function (string s)
 	}
 	return z;
 }
+
+// suff[i] = length of the longest common suffix of s and s[0..i]
+vector<int> suffixes(const string &s)
+{
+	int n = s.length();
+
+	vector<int> suff(n, n);
+
+	for (int i = n - 2, g = n - 1, f; i >= 0; --i)
+	{
+		if (i > g && suff[i + n - 1 - f] != i - g)
+			suff[i] = min(suff[i + n - 1 - f], i - g);
+		else
+		{
+			for (g = min(g, f = i); g >= 0 && 
+				 s[g] == s[g + n - 1 - f]; --g);
+			suff[i] = f - g;
+		}
+	}
+
+	return suff;
+}
