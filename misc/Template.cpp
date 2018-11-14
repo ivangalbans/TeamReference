@@ -1,9 +1,4 @@
-#include <cstdio>	#include <iostream>		#include <string>
-#include <cstring>	#include <vector>		#include <set>
-#include <map>		#include <queue>		#include <stack>
-#include <complex>	#include <algorithm>	#include <sstream>
-#include <list>		#include <deque>		#include <stack>
-#include <cmath>	#include <iomanip>		#include <bits/stdc++.h>
+#include <bits/stdc++.h>
 
 using namespace std;
 

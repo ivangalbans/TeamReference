@@ -45,6 +45,6 @@ int query(int *st, int node, int nodeL, int nodeR, int l, int r)
 		return query(st, Left(node), nodeL, m, l, r);
 	if(l > m)
 		return query(st, Right(node), m + 1, nodeR, l, r);
-	return query(st, Left(node), nodeL, m, l, r) + 
-			query(st, Right(node), m+1, nodeR, l, r);
+	return query(st, Left(node), nodeL, m, l, m) + 
+			query(st, Right(node), m+1, nodeR, m+1, r);
 }
