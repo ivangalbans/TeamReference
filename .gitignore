@@ -1,5 +1,6 @@
 *.aux
 *.log
-*.pdf
+*.dvi
+.DS_STORE
 *.gz
 *.toc

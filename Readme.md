@@ -2,6 +2,11 @@
 
 Team Reference for Programming Competitions
 
+## Compile to pdf
+~~~bash
+latex -output-format=pdf reference.tex
+~~~
+
 ## Contents
 
 ### Misc
