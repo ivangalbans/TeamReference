@@ -1,6 +1,6 @@
 # ACM-ICPC Team Reference
 
-Team Reference for Programming Competitions
+Team Reference for Programming Competitions ([click here](https://github.com/ivangalban/TeamReference/blob/master/reference.pdf))
 
 ## Compile to pdf
 ~~~bash
