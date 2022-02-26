@@ -1,10 +1,10 @@
 // Transform S into T.
 // For example, S = "abba", T = "^#a#b#b#a#$".
 // ^ and $ signs are sentinels appended to each end to avoid bounds checking
-string preProcess(string s)
-{
+string preProcess(string s) {
   int n = s.length();
-  if (n == 0) return "^$";
+  if (n == 0)
+    return "^$";
   string ret = "^";
   for (int i = 0; i < n; i++)
     ret += "#" + s.substr(i, 1);
@@ -13,18 +13,17 @@ string preProcess(string s)
   return ret;
 }
 
-//Time: O(n)
-string longestPalindrome(string s)
-{
+// Time: O(n)
+string longestPalindrome(string s) {
   string T = preProcess(s);
   int n = T.length();
   int *P = new int[n];
   int C = 0, R = 0;
 
-  for (int i = 1; i < n-1; i++) {
-    int i_mirror = 2*C-i; // equals to i' = C - (i-C)
+  for (int i = 1; i < n - 1; i++) {
+    int i_mirror = 2 * C - i; // equals to i' = C - (i-C)
 
-    P[i] = (R > i) ? min(R-i, P[i_mirror]) : 0;
+    P[i] = (R > i) ? min(R - i, P[i_mirror]) : 0;
 
     // Attempt to expand palindrome centered at i
     while (T[i + 1 + P[i]] == T[i - 1 - P[i]])
@@ -38,10 +37,10 @@ string longestPalindrome(string s)
     }
   }
 
-  //Find the maximum element in P.
+  // Find the maximum element in P.
   int maxLen = 0;
   int centerIndex = 0;
-  for (int i = 1; i < n-1; i++) {
+  for (int i = 1; i < n - 1; i++) {
     if (P[i] > maxLen) {
       maxLen = P[i];
       centerIndex = i;
@@ -50,5 +49,5 @@ string longestPalindrome(string s)
 
   delete[] P;
 
-  return s.substr((centerIndex - 1 - maxLen)/2, maxLen);
+  return s.substr((centerIndex - 1 - maxLen) / 2, maxLen);
 }
